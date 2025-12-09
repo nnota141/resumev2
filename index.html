@@ -1,125 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Resume</title>
-
-<!-- Keep your imported fonts -->
-<link href="https://themes.googleusercontent.com/fonts/css?kit=ZvcMqxEwPfh2qDWBPxn6nrUSKYGSHCD7CVh36AkaFXVB3spTXG2yLthAopQpl_Oe_Gl7cDqkvBQ4pZH77uhp3g2VB5Q0iSFLL88b9jJCkFLOfsfM6rvuuu7h1pY3r_-A" rel="stylesheet">
-
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        background: #f5f5f5;
-        font-family: "Merriweather", serif;
-        display: flex;
-        justify-content: center;
-    }
-
-    .page {
-        background: white;
-        width: 900px;
-        max-width: 95%;
-        padding: 40px;
-        margin: 40px 0;
-        box-shadow: 0 0 25px rgba(0,0,0,0.1);
-        border-radius: 10px;
-    }
-
-    /* Keep your original styling intact */
-    table {
-        width: 100%;
-    }
-
-    .title {
-        font-size: 36pt;
-        font-weight: bold;
-        margin: 0;
-    }
-
-    h1 {
-        font-family: "Open Sans", sans-serif;
-        color: #2079c7;
-        font-size: 12pt;
-        margin-top: 25px;
-    }
-
-    h2 {
-        font-size: 16pt;
-        font-weight: bold;
-        margin: 15px 0 5px 0;
-    }
-
-    h3 {
-        font-family: "Open Sans", sans-serif;
-        font-size: 10pt;
-        margin: 5px 0;
-    }
-
-    p, li {
-        font-size: 10pt;
-        color: #555;
-        line-height: 1.4;
-    }
-</style>
+  <meta charset="UTF-8">
+  <title>Resume - @i_avramovv</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-<div class="page">
+<body class="bg-gray-100 flex justify-center py-10">
+  <div class="bg-white shadow-lg rounded-lg w-full max-w-4xl p-10">
 
-<!-- YOUR ORIGINAL CONTENT (unchanged) -->
-<table>
-<tr>
-<td>
-    <p class="title">@i_avramovv.</p>
-</td>
-<td></td>
-</tr>
+    <!-- HEADER -->
+    <div class="text-center mb-10">
+      <h1 class="text-4xl font-bold text-gray-900">@i_avramovv.</h1>
+    </div>
 
-<tr>
-<td>
-    <h1>EXPERIENCE</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-    <h2>Flydubai — <i>Chief Executive Officer</i></h2>
-    <h3>28/07/2024 - Present</h3>
-    <p>Highest member count: 390 (Post new-gen)<br>Current member count: 98</p>
+      <!-- LEFT COLUMN (Experience) -->
+      <div class="md:col-span-2">
 
-    <h2>Gulf Air — <i>Chief Staff Officer</i></h2>
-    <h3>27/07/2024 - Present</h3>
-    <p>Highest member count: ~600<br>Current member count: 343+</p>
+        <h2 class="text-blue-700 font-bold text-lg mb-4">EXPERIENCE</h2>
 
-    <h2>Loganair — <i>CEO & Lead Developer</i></h2>
-    <h3>Unknown - Unknown</h3>
-    <p>Current member count: 400+</p>
+        <!-- Experience Item -->
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold">Flydubai — <span class="italic">Chief Executive Officer</span></h3>
+          <p class="text-gray-500">28/07/2024 - Present</p>
+          <p class="text-gray-700 text-sm">Highest member count: 390 (Post new-gen)<br>Current member count: 98</p>
+        </div>
 
-    <h2>Banana Technologies — <i>Vice Chairman</i></h2>
-    <h3>Unknown - Unknown</h3>
-    <p>Highest member count: ~300</p>
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold">Gulf Air — <span class="italic">Chief Staff Officer</span></h3>
+          <p class="text-gray-500">27/07/2024 - Present</p>
+          <p class="text-gray-700 text-sm">Highest member count: ~600<br>Current member count: 343+</p>
+        </div>
 
-    <h2>skyscotland — <i>Holder</i></h2>
-    <h3>November 28th - Present</h3>
-    <p>Highest member count: 41<br>Current member count: 39</p>
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold">Loganair — <span class="italic">CEO & Lead Developer</span></h3>
+          <p class="text-gray-500">Unknown - Unknown (est. June–October ‘24)</p>
+          <p class="text-gray-700 text-sm">Current member count: 400+</p>
+        </div>
 
-    <h2>TropicJet — <i>Vice President</i></h2>
-    <h3>04/01/2024 - 05/11/2025</h3>
-    <p>Highest member count: 120+</p>
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold">Banana Technologies — <span class="italic">Vice Chairman</span></h3>
+          <p class="text-gray-500">Unknown - Unknown</p>
+          <p class="text-gray-700 text-sm">Highest member count: ~300</p>
+        </div>
 
-    <h2>Winair — <i>Ground Crew Instructor</i></h2>
-    <h3>04/01/2025 - Present</h3>
-    <p>Highest member count: 1,000+<br>Current member count: 1,000+</p>
-</td>
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold">skyscotland — <span class="italic">Holder</span></h3>
+          <p class="text-gray-500">November 28th - Present</p>
+          <p class="text-gray-700 text-sm">Highest member count: 41<br>Current: 39</p>
+        </div>
 
-<td style="width: 35%; padding-left: 30px;">
-    <h1>SKILLS</h1>
-    <p>Management<br>CSG Modelling<br>CSG Liveries<br>Graphics work</p>
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold">TropicJet — <span class="italic">Vice President</span></h3>
+          <p class="text-gray-500">04/01/2024 - 05/11/2025</p>
+          <p class="text-gray-700 text-sm">Highest member count: 120+</p>
+        </div>
 
-    <h1>LANGUAGES</h1>
-    <p>English (B2)<br>Bulgarian (C2)<br>Spanish (A1)</p>
-</td>
-</tr>
-</table>
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold">Winair — <span class="italic">Ground Crew Instructor</span></h3>
+          <p class="text-gray-500">04/01/2025 - Present</p>
+          <p class="text-gray-700 text-sm">Highest & Current: 1,000+</p>
+        </div>
 
-</div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div>
+
+        <h2 class="text-blue-700 font-bold text-lg mb-4">SKILLS</h2>
+        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+          <li>Management</li>
+          <li>CSG Modelling</li>
+          <li>CSG Liveries</li>
+          <li>Graphics work</li>
+        </ul>
+
+        <h2 class="text-blue-700 font-bold text-lg mt-10 mb-4">LANGUAGES</h2>
+        <p class="text-gray-700">
+          English (B2 Level)<br>
+          Bulgarian (C2 Level)<br>
+          Spanish (A1 Level)
+        </p>
+
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>

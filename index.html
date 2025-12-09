@@ -2,91 +2,137 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Resume - @i_avramovv</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@i_avramovv — Resume</title>
+
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Smooth Entrance Animations -->
+  <style>
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up {
+      animation: fadeUp 0.7s ease-out forwards;
+      opacity: 0;
+    }
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+  </style>
+
 </head>
 
-<body class="bg-gray-100 flex justify-center py-10">
-  <div class="bg-white shadow-lg rounded-lg w-full max-w-4xl p-10">
+<body class="bg-gray-100 min-h-screen flex justify-center p-6">
 
-    <!-- HEADER -->
-    <div class="text-center mb-10">
-      <h1 class="text-4xl font-bold text-gray-900">@i_avramovv.</h1>
+  <div class="max-w-4xl w-full bg-white shadow-xl rounded-2xl p-10 fade-up">
+    
+    <!-- Header -->
+    <div class="text-center mb-10 fade-up delay-1">
+      <h1 class="text-4xl font-bold">@i_avramovv</h1>
+      <p class="text-gray-500 mt-1">Resume</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-      <!-- LEFT COLUMN (Experience) -->
-      <div class="md:col-span-2">
+      <!-- Left Column -->
+      <div class="md:col-span-2 space-y-6">
 
-        <h2 class="text-blue-700 font-bold text-lg mb-4">EXPERIENCE</h2>
+        <!-- EXPERIENCE SECTION -->
+        <h2 class="text-xl font-bold text-blue-600 fade-up delay-2">Experience</h2>
 
-        <!-- Experience Item -->
-        <div class="mb-6">
-          <h3 class="text-xl font-semibold">Flydubai — <span class="italic">Chief Executive Officer</span></h3>
-          <p class="text-gray-500">28/07/2024 - Present</p>
-          <p class="text-gray-700 text-sm">Highest member count: 390 (Post new-gen)<br>Current member count: 98</p>
+        <!-- Experience Card -->
+        <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition hover:-translate-y-1 fade-up delay-3">
+          <h3 class="text-lg font-semibold">Flydubai — CEO</h3>
+          <p class="text-sm text-gray-600">28/07/2024 - Present</p>
+          <p class="mt-2 text-gray-700">
+            Highest member count: 390<br>
+            Current member count: 98
+          </p>
         </div>
 
-        <div class="mb-6">
-          <h3 class="text-xl font-semibold">Gulf Air — <span class="italic">Chief Staff Officer</span></h3>
-          <p class="text-gray-500">27/07/2024 - Present</p>
-          <p class="text-gray-700 text-sm">Highest member count: ~600<br>Current member count: 343+</p>
+        <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition hover:-translate-y-1 fade-up delay-3">
+          <h3 class="text-lg font-semibold">Gulf Air — Chief Staff Officer</h3>
+          <p class="text-sm text-gray-600">27/07/2024 - Present</p>
+          <p class="mt-2 text-gray-700">
+            Highest member count: ~600<br>
+            Current member count: 343+
+          </p>
         </div>
 
-        <div class="mb-6">
-          <h3 class="text-xl font-semibold">Loganair — <span class="italic">CEO & Lead Developer</span></h3>
-          <p class="text-gray-500">Unknown - Unknown (est. June–October ‘24)</p>
-          <p class="text-gray-700 text-sm">Current member count: 400+</p>
+        <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition hover:-translate-y-1 fade-up delay-3">
+          <h3 class="text-lg font-semibold">Loganair — CEO & Lead Developer</h3>
+          <p class="text-sm text-gray-600">Approx. June–Oct 2024</p>
+          <p class="mt-2 text-gray-700">
+            Current member count: 400+
+          </p>
         </div>
 
-        <div class="mb-6">
-          <h3 class="text-xl font-semibold">Banana Technologies — <span class="italic">Vice Chairman</span></h3>
-          <p class="text-gray-500">Unknown - Unknown</p>
-          <p class="text-gray-700 text-sm">Highest member count: ~300</p>
+        <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition hover:-translate-y-1 fade-up delay-3">
+          <h3 class="text-lg font-semibold">Banana Technologies — Vice Chairman</h3>
+          <p class="text-sm text-gray-600">Unknown - Unknown</p>
+          <p class="text-gray-700 mt-2">Highest member count: ~300</p>
         </div>
 
-        <div class="mb-6">
-          <h3 class="text-xl font-semibold">skyscotland — <span class="italic">Holder</span></h3>
-          <p class="text-gray-500">November 28th - Present</p>
-          <p class="text-gray-700 text-sm">Highest member count: 41<br>Current: 39</p>
+        <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition hover:-translate-y-1 fade-up delay-3">
+          <h3 class="text-lg font-semibold">skyscotland — Holder</h3>
+          <p class="text-sm text-gray-600">Nov 28 – Present</p>
+          <p class="text-gray-700 mt-2">
+            Highest member count: 41<br>
+            Current member count: 39
+          </p>
         </div>
 
-        <div class="mb-6">
-          <h3 class="text-xl font-semibold">TropicJet — <span class="italic">Vice President</span></h3>
-          <p class="text-gray-500">04/01/2024 - 05/11/2025</p>
-          <p class="text-gray-700 text-sm">Highest member count: 120+</p>
+        <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition hover:-translate-y-1 fade-up delay-3">
+          <h3 class="text-lg font-semibold">TropicJet — Vice President</h3>
+          <p class="text-sm text-gray-600">04/01/2024 - 05/11/2025</p>
+          <p class="text-gray-700 mt-2">Highest member count: 120+</p>
         </div>
 
-        <div class="mb-6">
-          <h3 class="text-xl font-semibold">Winair — <span class="italic">Ground Crew Instructor</span></h3>
-          <p class="text-gray-500">04/01/2025 - Present</p>
-          <p class="text-gray-700 text-sm">Highest & Current: 1,000+</p>
+        <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition hover:-translate-y-1 fade-up delay-3">
+          <h3 class="text-lg font-semibold">Winair — Ground Crew Instructor</h3>
+          <p class="text-sm text-gray-600">04/01/2025 - Present</p>
+          <p class="text-gray-700 mt-2">
+            Highest member count: 1,000+<br>
+            Current member count: 1,000+
+          </p>
         </div>
 
       </div>
 
-      <!-- RIGHT COLUMN -->
-      <div>
+      <!-- Right Column -->
+      <div class="space-y-6">
 
-        <h2 class="text-blue-700 font-bold text-lg mb-4">SKILLS</h2>
-        <ul class="list-disc pl-5 text-gray-700 space-y-1">
-          <li>Management</li>
-          <li>CSG Modelling</li>
-          <li>CSG Liveries</li>
-          <li>Graphics work</li>
-        </ul>
+        <!-- Skills -->
+        <h2 class="text-xl font-bold text-blue-600 fade-up delay-2">Skills</h2>
 
-        <h2 class="text-blue-700 font-bold text-lg mt-10 mb-4">LANGUAGES</h2>
-        <p class="text-gray-700">
-          English (B2 Level)<br>
-          Bulgarian (C2 Level)<br>
-          Spanish (A1 Level)
-        </p>
+        <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition hover:-translate-y-1 fade-up delay-3">
+          <p class="text-gray-700 leading-relaxed">
+            Management<br>
+            CSG Modelling<br>
+            CSG Liveries<br>
+            Graphics work
+          </p>
+        </div>
+
+        <!-- Languages -->
+        <h2 class="text-xl font-bold text-blue-600 fade-up delay-2">Languages</h2>
+
+        <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition hover:-translate-y-1 fade-up delay-3">
+          <p class="text-gray-700 leading-relaxed">
+            English (B2)<br>
+            Bulgarian (C2)<br>
+            Spanish (A1)
+          </p>
+        </div>
 
       </div>
 
     </div>
+
   </div>
+
 </body>
 </html>

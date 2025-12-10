@@ -68,52 +68,29 @@
       margin-top: 2rem;
     }
 
-    /* Card flip styles */
-    .card-wrapper {
-      perspective: 1000px;
-      margin-bottom: 1rem;
-    }
-
     .card {
-      position: relative;
-      width: 100%;
-      border-radius: 12px;
-      transform-style: preserve-3d;
-      transition: transform 0.6s;
-    }
-
-    .card-wrapper:hover .card {
-      transform: rotateY(180deg);
-    }
-
-    .card-side {
-      position: absolute;
-      width: 100%;
-      backface-visibility: hidden;
-      border-radius: 12px;
+      background-color: #1a1c29;
       padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.5);
       text-align: left;
+      transition: transform 0.3s;
     }
 
-    .card-front {
-      background-color: #1a1c29;
-      color: #e0e0e0;
-    }
-
-    .card-back {
-      background-color: #292b3c;
-      color: #8ab4f8;
-      transform: rotateY(180deg);
+    .card:hover {
+      transform: translateY(-3px);
     }
 
     .card h2 {
       font-size: 1.25rem;
+      color: #8ab4f8;
       margin-bottom: 0.5rem;
     }
 
     .card p {
       font-size: 0.95rem;
+      color: #ccc;
       margin: 0;
     }
   </style>
@@ -133,30 +110,14 @@
     </div>
 
     <div class="content">
-      <div class="card-wrapper">
-        <div class="card">
-          <div class="card-side card-front">
-            <h2>Project 1 - Balkan 86'</h2>
-            <p>Currently working on a retro based airline in Communist Bulgaria, with fully custom airports, assets and many more.</p>
-          </div>
-          <div class="card-side card-back">
-            <h2>More Info</h2>
-            <p>This project includes designing aircraft liveries, creating airports in Roblox, and building a full retro airline experience.</p>
-          </div>
-        </div>
+      <div class="card">
+        <h2>Project 1 - Balkan 86'</h2>
+        <p>Currently working on a retro based airline in Communist Bulgaria, with fully custom airports, assets and many more.</p>
       </div>
 
-      <div class="card-wrapper">
-        <div class="card">
-          <div class="card-side card-front">
-            <h2>Project 2 - Control Centre</h2>
-            <p>Control centre is a open-sourced project, that you can manage Data-linking for your VA or vACC.</p>
-          </div>
-          <div class="card-side card-back">
-            <h2>More Info</h2>
-            <p>This includes real-time flight tracking, management dashboards, and integration with VATSIM networks.</p>
-          </div>
-        </div>
+      <div class="card">
+        <h2>Project 2 - Control Centre</h2>
+        <p>Control centre is a open-sourced project, that you can manage Data-linking for your VA or vACC.</p>
       </div>
     </div>
   </div>

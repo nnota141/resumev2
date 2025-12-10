@@ -4,7 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experience — @i_avramovv</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0f111a;
+      color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      color: #8ab4f8;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .content {
+      margin-top: 2rem;
+    }
+
+    .card {
+      background-color: #1a1c29;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      text-align: left;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .card h2 {
+      font-size: 1.25rem;
+      color: #8ab4f8;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -16,14 +80,20 @@
 
     <div class="content">
       <h1>Experience</h1>
-      <div class="experience-card">
+
+      <div class="card">
         <h2>Project / Role 1</h2>
         <p>Details about your experience, what you accomplished, and skills gained.</p>
       </div>
 
-      <div class="experience-card">
+      <div class="card">
         <h2>Project / Role 2</h2>
         <p>Another experience with a description and relevant details.</p>
+      </div>
+
+      <div class="card">
+        <h2>Project / Role 3</h2>
+        <p>Additional experience or projects if needed.</p>
       </div>
     </div>
   </div>

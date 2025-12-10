@@ -15,15 +15,18 @@
       justify-content: center;
       min-height: 100vh;
     }
+
     .container {
-      max-width: 700px;
+      max-width: 600px;
       width: 100%;
       padding: 2rem;
       text-align: center;
     }
+
     nav {
       margin-bottom: 2rem;
     }
+
     nav a {
       color: #8ab4f8;
       margin: 0 1rem;
@@ -31,9 +34,11 @@
       font-weight: bold;
       transition: color 0.3s;
     }
+
     nav a:hover {
       color: #ffffff;
     }
+
     .profile img {
       width: 120px;
       height: 120px;
@@ -41,40 +46,52 @@
       object-fit: cover;
       border: 2px solid #8ab4f8;
       margin-bottom: 1rem;
+      transition: transform 0.3s;
     }
+
+    .profile img:hover {
+      transform: scale(1.05);
+    }
+
     .profile h1 {
       font-size: 2rem;
       margin: 0.5rem 0;
     }
+
     .profile p {
       font-size: 1rem;
       color: #b0b0b0;
       margin-top: 0.5rem;
     }
+
     .content {
       margin-top: 2rem;
-      text-align: left;
     }
+
     .card {
       background-color: #1a1c29;
       padding: 1rem;
       margin-bottom: 1rem;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      text-align: left;
       transition: transform 0.3s;
     }
+
     .card:hover {
       transform: translateY(-3px);
     }
+
     .card h2 {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       color: #8ab4f8;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.5rem;
     }
+
     .card p {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: #ccc;
-      margin: 0.2rem 0;
+      margin: 0;
     }
   </style>
 </head>

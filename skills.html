@@ -39,8 +39,29 @@
       color: #ffffff;
     }
 
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #8ab4f8;
+      margin-bottom: 1rem;
+    }
+
+    .profile h1 {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+    }
+
+    .profile p {
+      font-size: 1rem;
+      color: #b0b0b0;
+      margin-top: 0.5rem;
+    }
+
     .content {
       margin-top: 2rem;
+      text-align: left;
     }
 
     .card {
@@ -49,7 +70,6 @@
       margin-bottom: 1rem;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-      text-align: left;
       transition: transform 0.3s;
     }
 
@@ -78,22 +98,33 @@
       <a href="skills.html">Skills</a>
     </nav>
 
+    <div class="profile">
+      <img src="images/profile.jpg" alt="Profile Picture">
+      <h1>@i_avramovv</h1>
+      <p>Aviation enthusiast from Bulgaria</p>
+    </div>
+
     <div class="content">
       <h1>Skills</h1>
 
       <div class="card">
-        <h2>Skill 1</h2>
-        <p>Short description or proficiency level.</p>
+        <h2>Air Traffic Control</h2>
+        <p>Experienced on VATSIM; S2 rating with training towards S3.</p>
       </div>
 
       <div class="card">
-        <h2>Skill 2</h2>
-        <p>Short description or proficiency level.</p>
+        <h2>Virtual Airline Operations</h2>
+        <p>Worked in nui.hop airline on operations, development, and training.</p>
       </div>
 
       <div class="card">
-        <h2>Skill 3</h2>
-        <p>Short description or proficiency level.</p>
+        <h2>Airline Management</h2>
+        <p>Created Elos.aero, a Greek domestic airline; structured fares and operations.</p>
+      </div>
+
+      <div class="card">
+        <h2>Event Coordination</h2>
+        <p>Managed and coordinated VATSIM events like Burgas Night.</p>
       </div>
     </div>
   </div>

@@ -3,42 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home — @i_avramovv</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    @keyframes fadeUp {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-    .fade-up { animation: fadeUp 0.7s ease-out forwards; opacity: 0; }
-    .delay-1 { animation-delay: 0.2s; }
-    .delay-2 { animation-delay: 0.4s; }
-    .delay-3 { animation-delay: 0.6s; }
-  </style>
+  <title>@i_avramovv</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-<body class="bg-gradient-to-b from-gray-100 to-blue-50 min-h-screen flex justify-center p-6">
-
-  <div class="max-w-3xl w-full bg-white shadow-xl rounded-2xl p-10 fade-up">
-
-    <!-- NAVBAR -->
-    <nav class="flex justify-center gap-10 text-blue-600 font-medium mb-8 fade-up delay-1">
+<body>
+  <div class="container">
+    <nav>
       <a href="index.html">Home</a>
       <a href="experience.html">Experience</a>
       <a href="skills.html">Skills</a>
     </nav>
 
-    <!-- PFP AND DESC -->
-    <div class="flex flex-col items-center fade-up delay-1">
-      <img src="cow.jpg" alt="Profile Picture" class="w-32 h-32 object-cover rounded-full mb-4 shadow-lg">
-      <h1 class="text-4xl font-bold">@i_avramovv</h1>
-      <p class="mt-4 text-gray-700 text-center">
-        aviation enthusiast from bulgaria
-      </p>
+    <div class="profile">
+      <img src="images/profile.jpg" alt="Profile Picture">
+      <h1>@i_avramovv</h1>
+      <p>Aviation enthusiast from Bulgaria</p>
     </div>
-
   </div>
-
 </body>
 </html>

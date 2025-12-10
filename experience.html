@@ -17,7 +17,7 @@
     }
 
     .container {
-      max-width: 600px;
+      max-width: 900px;
       width: 100%;
       padding: 2rem;
       text-align: center;
@@ -65,33 +65,60 @@
     }
 
     .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
       margin-top: 2rem;
     }
 
     .card {
-      background-color: #1a1c29;
-      padding: 1rem;
-      margin-bottom: 1rem;
+      position: relative;
+      width: 250px;
+      height: 150px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-      text-align: left;
-      transition: transform 0.3s;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
     }
 
     .card:hover {
-      transform: translateY(-3px);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
     }
 
-    .card h2 {
-      font-size: 1.25rem;
-      color: #8ab4f8;
-      margin-bottom: 0.5rem;
+    .card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.6), transparent 50%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1rem;
     }
 
-    .card p {
-      font-size: 0.95rem;
-      color: #ccc;
+    .card-overlay .role {
+      background-color: rgba(0,0,0,0.5);
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      align-self: flex-start;
+      margin-bottom: 4px;
+    }
+
+    .card-overlay h2 {
       margin: 0;
+      font-size: 1rem;
+    }
+
+    .card-overlay p {
+      margin: 2px 0 0 0;
+      font-size: 0.85rem;
+      opacity: 0.8;
     }
   </style>
 </head>
@@ -110,15 +137,23 @@
     </div>
 
     <div class="content">
-      <div class="card">
-        <h2>Project 1 - Balkan 86'</h2>
-        <p>Currently working on a retro based airline in Communist Bulgaria, with fully custom airports, assets and many more.</p>
+      <div class="card" style="background-image: url('balkan86.jpg');">
+        <div class="card-overlay">
+          <span class="role">Project</span>
+          <h2>Project 1 - Balkan 86'</h2>
+          <p>Retro-based airline in Communist Bulgaria, with custom airports, assets and more.</p>
+        </div>
       </div>
 
-      <div class="card">
-        <h2>Project 2 - Control Centre</h2>
-        <p>Control centre is a open-sourced project, that you can manage Data-linking for your VA or vACC.</p>
+      <div class="card" style="background-image: url('controlcentre.jpg');">
+        <div class="card-overlay">
+          <span class="role">Project</span>
+          <h2>Project 2 - Control Centre</h2>
+          <p>Open-source project to manage data-linking for your VA or vACC.</p>
+        </div>
       </div>
+
+      <!-- Add more cards here if needed -->
     </div>
   </div>
 </body>

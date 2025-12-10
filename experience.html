@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Experience — @i_avramovv</title>
+  <title>@i_avramovv</title>
   <style>
     body {
       margin: 0;
@@ -15,15 +15,18 @@
       justify-content: center;
       min-height: 100vh;
     }
+
     .container {
-      max-width: 700px;
+      max-width: 600px;
       width: 100%;
       padding: 2rem;
       text-align: center;
     }
+
     nav {
       margin-bottom: 2rem;
     }
+
     nav a {
       color: #8ab4f8;
       margin: 0 1rem;
@@ -31,9 +34,11 @@
       font-weight: bold;
       transition: color 0.3s;
     }
+
     nav a:hover {
       color: #ffffff;
     }
+
     .profile img {
       width: 120px;
       height: 120px;
@@ -41,40 +46,75 @@
       object-fit: cover;
       border: 2px solid #8ab4f8;
       margin-bottom: 1rem;
+      transition: transform 0.3s;
     }
+
+    .profile img:hover {
+      transform: scale(1.05);
+    }
+
     .profile h1 {
       font-size: 2rem;
       margin: 0.5rem 0;
     }
+
     .profile p {
       font-size: 1rem;
       color: #b0b0b0;
       margin-top: 0.5rem;
     }
+
     .content {
       margin-top: 2rem;
+    }
+
+    /* Card flip styles */
+    .card-wrapper {
+      perspective: 1000px;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      position: relative;
+      width: 100%;
+      border-radius: 12px;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+
+    .card-wrapper:hover .card {
+      transform: rotateY(180deg);
+    }
+
+    .card-side {
+      position: absolute;
+      width: 100%;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
       text-align: left;
     }
-    .card {
+
+    .card-front {
       background-color: #1a1c29;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-      transition: transform 0.3s;
+      color: #e0e0e0;
     }
-    .card:hover {
-      transform: translateY(-3px);
-    }
-    .card h2 {
-      font-size: 1.2rem;
+
+    .card-back {
+      background-color: #292b3c;
       color: #8ab4f8;
-      margin-bottom: 0.3rem;
+      transform: rotateY(180deg);
     }
+
+    .card h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
     .card p {
-      font-size: 0.9rem;
-      color: #ccc;
-      margin: 0.2rem 0;
+      font-size: 0.95rem;
+      margin: 0;
     }
   </style>
 </head>
@@ -93,54 +133,31 @@
     </div>
 
     <div class="content">
-      <h1>Experience</h1>
-
-      <div class="card">
-        <h2>Flydubai — Chief Executive Officer</h2>
-        <p>28/07/2024 - Present</p>
-        <p>Highest member count: 390 (Post new-gen)</p>
-        <p>Current member count: 98</p>
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="card-side card-front">
+            <h2>Project 1 - Balkan 86'</h2>
+            <p>Currently working on a retro based airline in Communist Bulgaria, with fully custom airports, assets and many more.</p>
+          </div>
+          <div class="card-side card-back">
+            <h2>More Info</h2>
+            <p>This project includes designing aircraft liveries, creating airports in Roblox, and building a full retro airline experience.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
-        <h2>Gulf Air — Chief Staff Officer</h2>
-        <p>27/07/2024 - Present</p>
-        <p>Highest member count: ~600</p>
-        <p>Current member count: 343+</p>
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="card-side card-front">
+            <h2>Project 2 - Control Centre</h2>
+            <p>Control centre is a open-sourced project, that you can manage Data-linking for your VA or vACC.</p>
+          </div>
+          <div class="card-side card-back">
+            <h2>More Info</h2>
+            <p>This includes real-time flight tracking, management dashboards, and integration with VATSIM networks.</p>
+          </div>
+        </div>
       </div>
-
-      <div class="card">
-        <h2>Loganair — Chief Executive Officer & Lead Developer</h2>
-        <p>Unknown - Unknown (est. mid June - Late October 24')</p>
-        <p>Current member count: 400+</p>
-      </div>
-
-      <div class="card">
-        <h2>Banana Technologies — Vice Chairman</h2>
-        <p>Unknown - Unknown</p>
-        <p>Highest member count: ~300</p>
-      </div>
-
-      <div class="card">
-        <h2>skyscotland — Holder</h2>
-        <p>November 28th - Present</p>
-        <p>Highest member count: 41</p>
-        <p>Current member count: 39</p>
-      </div>
-
-      <div class="card">
-        <h2>TropicJet — Vice President</h2>
-        <p>04/01/2024 - 05/11/2025</p>
-        <p>Highest member count: 120+</p>
-      </div>
-
-      <div class="card">
-        <h2>Winair — Ground Crew Instructor</h2>
-        <p>04/01/2025 - Present</p>
-        <p>Highest member count: 1,000+</p>
-        <p>Current member count: 1,000+</p>
-      </div>
-
     </div>
   </div>
 </body>

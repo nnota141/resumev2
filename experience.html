@@ -4,92 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experience — @i_avramovv</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    @keyframes fadeUp {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-    .fade-up { animation: fadeUp 0.7s ease-out forwards; opacity: 0; }
-    .delay-1 { animation-delay: 0.2s; }
-    .delay-2 { animation-delay: 0.4s; }
-    .delay-3 { animation-delay: 0.6s; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-<body class="bg-gradient-to-b from-gray-100 to-blue-50 min-h-screen flex justify-center p-6">
-
-  <div class="max-w-4xl w-full bg-white shadow-xl rounded-2xl p-10 fade-up">
-
-    <!-- NAVBAR -->
-    <nav class="flex justify-center gap-10 text-blue-600 font-medium mb-8 fade-up delay-1">
+<body>
+  <div class="container">
+    <nav>
       <a href="index.html">Home</a>
       <a href="experience.html">Experience</a>
       <a href="skills.html">Skills</a>
     </nav>
 
-    <h1 class="text-3xl font-bold fade-up delay-1">Experience</h1>
+    <div class="content">
+      <h1>Experience</h1>
+      <p>Here you can list your experiences, internships, jobs, or any projects you have worked on. Each entry can include dates, roles, and a brief description.</p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-
-      <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition fade-up delay-2">
-        <h3 class="text-lg font-semibold">Flydubai — CEO</h3>
-        <p class="text-sm text-gray-600">28/07/2024 - Present</p>
-        <p class="mt-2 text-gray-700">
-          Highest member count: 390<br>
-          Current member count: 98
-        </p>
+      <div class="experience-card">
+        <h2>Project / Role 1</h2>
+        <p>Details about your experience, what you accomplished, and skills gained.</p>
       </div>
 
-      <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition fade-up delay-2">
-        <h3 class="text-lg font-semibold">Gulf Air — Chief Staff Officer</h3>
-        <p class="text-sm text-gray-600">27/07/2024 - Present</p>
-        <p class="mt-2 text-gray-700">
-          Highest member count: ~600<br>
-          Current member count: 343+
-        </p>
+      <div class="experience-card">
+        <h2>Project / Role 2</h2>
+        <p>Another experience with a description and relevant details.</p>
       </div>
-
-      <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition fade-up delay-2">
-        <h3 class="text-lg font-semibold">Loganair — CEO & Lead Developer</h3>
-        <p class="text-sm text-gray-600">30/07/2024 - 20/11/2024</p>
-        <p class="mt-2 text-gray-700">Highest member count: 400+</p>
-      </div>
-
-      <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition fade-up delay-2">
-        <h3 class="text-lg font-semibold">Banana Technologies — Vice Chairman</h3>
-        <p class="text-sm text-gray-600">Unknown - Unknown</p>
-        <p class="mt-2 text-gray-700">Highest member count: ~300</p>
-      </div>
-
-      <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition fade-up delay-2">
-        <h3 class="text-lg font-semibold">skyscotland — Holder</h3>
-        <p class="text-sm text-gray-600">28/11/2024 – Present</p>
-        <p class="mt-2 text-gray-700">
-          Highest member count: 40+<br>
-          Current member count: 40+
-        </p>
-      </div>
-
-      <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition fade-up delay-2">
-        <h3 class="text-lg font-semibold">TropicJet — Vice President</h3>
-        <p class="text-sm text-gray-600">04/01/2024 - 05/11/2025</p>
-        <p class="mt-2 text-gray-700">Highest member count: 120+</p>
-      </div>
-
-      <div class="p-5 bg-gray-50 rounded-xl shadow hover:shadow-xl transition fade-up delay-2">
-        <h3 class="text-lg font-semibold">Winair — Ground Crew Instructor</h3>
-        <p class="text-sm text-gray-600">04/01/2025 - Present</p>
-        <p class="mt-2 text-gray-700">
-          Highest member count: 1,000+<br>
-          Current member count: 1,000+
-        </p>
-      </div>
-
     </div>
-
   </div>
-
 </body>
 </html>

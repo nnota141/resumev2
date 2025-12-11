@@ -68,30 +68,55 @@
       margin-top: 2rem;
     }
 
-    .card {
-      background-color: #1a1c29;
-      padding: 1rem;
-      margin-bottom: 1rem;
+    /* ---------- FLIP CARD STYLING ---------- */
+
+    .flip-card {
+      background-color: transparent;
+      width: 100%;
+      height: 150px;
+      margin-bottom: 1.5rem;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
       border-radius: 12px;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-      text-align: left;
-      transition: transform 0.3s;
     }
 
-    .card:hover {
-      transform: translateY(-3px);
-    }
-
-    .card h2 {
-      font-size: 1.25rem;
+    .flip-card-front {
+      background-color: #1a1c29;
       color: #8ab4f8;
-      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      font-weight: bold;
     }
 
-    .card p {
-      font-size: 0.95rem;
+    .flip-card-back {
+      background-color: #1a1c29;
+      transform: rotateY(180deg);
+      text-align: left;
       color: #ccc;
-      margin: 0;
+      font-size: 0.95rem;
     }
   </style>
 </head>
@@ -110,15 +135,31 @@
     </div>
 
     <div class="content">
-      <div class="card">
-        <h2>Project 1 - Balkan 86'</h2>
-        <p>Currently working on a retro based airline in Communist Bulgaria, with fully custom airports, assets and many more.</p>
+
+      <!-- PROJECT 1 FLIP CARD -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            Project 1 — Balkan 86'
+          </div>
+          <div class="flip-card-back">
+            Currently working on a retro based airline in Communist Bulgaria, with fully custom airports, assets and many more.
+          </div>
+        </div>
       </div>
 
-      <div class="card">
-        <h2>Project 2 - Control Centre</h2>
-        <p>Control centre is a open-sourced project, that you can manage Data-linking for your VA or vACC.</p>
+      <!-- PROJECT 2 FLIP CARD -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            Project 2 — Control Centre
+          </div>
+          <div class="flip-card-back">
+            Control centre is an open-sourced project that lets you manage data-linking for your VA or vACC.
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </body>

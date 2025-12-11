@@ -68,14 +68,19 @@
       margin-top: 2rem;
     }
 
-    /* ---------- Smaller Flip Cards ---------- */
+    /* ---------- Flip Cards ---------- */
 
     .flip-card {
       background-color: transparent;
       width: 100%;
-      height: 120px;   /* Smaller height */
-      margin-bottom: 1.2rem;
+      height: 120px;
+      margin-bottom: 0;
       perspective: 1000px;
+    }
+
+    /* Space only between card 1 and 2 */
+    .flip-card + .flip-card {
+      margin-top: 2rem;
     }
 
     .flip-card-inner {
@@ -83,7 +88,7 @@
       width: 100%;
       height: 100%;
       text-align: center;
-      transition: transform 0.6s;
+      transition: transform 0.9s ease; /* slower animation */
       transform-style: preserve-3d;
     }
 
@@ -97,7 +102,7 @@
       height: 100%;
       backface-visibility: hidden;
       border-radius: 12px;
-      padding: 0.8rem; /* slightly smaller padding */
+      padding: 0.8rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -107,7 +112,7 @@
     .flip-card-front {
       background-color: #1a1c29;
       color: #8ab4f8;
-      font-size: 1.15rem; /* slightly smaller text */
+      font-size: 1.15rem;
       font-weight: bold;
     }
 
@@ -116,7 +121,7 @@
       transform: rotateY(180deg);
       text-align: left;
       color: #ccc;
-      font-size: 0.85rem; /* smaller text */
+      font-size: 0.85rem;
     }
   </style>
 </head>
@@ -136,7 +141,6 @@
 
     <div class="content">
 
-      <!-- PROJECT 1 FLIP CARD -->
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -148,7 +152,6 @@
         </div>
       </div>
 
-      <!-- PROJECT 2 FLIP CARD -->
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
